@@ -1,51 +1,50 @@
-## Jenkins Robotics
-# Jenkins CNC
-
-<!-- This is commented out. -->
+```markdown
+## Repository Template Readme
+# Project Template
 
 ## Project Information
 
-Project Status : <mark style="background-color: green"> &nbsp; COMPLETED &nbsp;</mark>  
-Code Status : <mark style="background-color: green"> &nbsp; GOOD &nbsp;</mark>  
-Development Status : <mark style="background-color: red"> &nbsp; NOT ACTIVE &nbsp;</mark>  
+Project Status : <mark style="background-color: lightblue">   PENDING  </mark>  
+Code Status : <mark style="background-color: yellow">   IN PROGRESS  </mark>  
+Development Status : <mark style="background-color: orange">   ACTIVE  </mark>  
 
 
 
-&nbsp;
+ 
 ## General Information
 
 
- This is the project files for our Shapeoko 3 xxl. Our goal is to make our shapeoko 3 as automated as possible. To achive this goal we have installed multiple upgrades onto our cnc including: 
-- [x] Automated Tool Change
-- [x] Manual Tool Change
-- [x] Coolent 
-- [x] Tool Z Probe Macro
-- [x] Work Piece XYZ Probe
-- [x] Spindle Control
-- [x] Modularity
+ This is a template README file designed to be adapted for your specific project. Replace this text with a brief overview of your project's purpose and goals.
+For example, you might describe the problem your project solves, its primary features, or its target audience.
 
-&nbsp;
-## WATCH NOW ON YOUTUBE
+**Key Features/Goals to Replace:**
+- [ ] Feature 1 Description
+- [ ] Feature 2 Description
+- [ ] Feature 3 Description
+- [ ] ...add more as needed
 
-
- Watch the project playlist on youtube. 
-
- &nbsp;
-
-[![image alt text](http://img.youtube.com/vi/w-qWbZ5-IQw/0.jpg)](https://youtube.com/playlist?list=PLNTKXZ4hgP_jekZOWw05JcJtyseCdSsIV "YouTube")
-
-&nbsp;
-## Support
-
-Did this project help you? Consider supporting! 
-
-Consider Subscribing: https://bit.ly/2DgZyuq <br>
-Patreon ➔ https://www.patreon.com/JenkinsRobotics <br>
-Venmo ➔ https://venmo.com/u/JenkinsRobotics <br>
+ 
+## WATCH NOW ON YOUTUBE (Optional)
 
 
+ If your project has a related YouTube playlist or video, update the link and description below. Otherwise, you can remove this section.
 
-&nbsp;
+ 
+
+[![Optional YouTube Playlist/Video Thumbnail](http://img.youtube.com/vi/w-qWbZ5-IQw/0.jpg)](https://youtube.com/playlist?list=PLNTKXZ4hgP_jekZOWw05JcJtyseCdSsIV "YouTube Project Playlist/Video Title")
+
+ 
+## Support (Optional)
+
+If you wish to include support links for your project, update the information below. This section can be removed if not applicable.
+
+Consider Subscribing: [Your YouTube Channel Link] <br>
+Patreon ➔ [Your Patreon Link] <br>
+Venmo ➔ [Your Venmo Link] <br>
+
+
+
+ 
 ## Table of Contents
 
 
@@ -57,144 +56,100 @@ Venmo ➔ https://venmo.com/u/JenkinsRobotics <br>
 **[Links](#links)**<br>
 
 
-&nbsp;
+ 
 ## Project File Structure
 
-The following is a breakdown of the different folders and the files contained in them:
+The following is a breakdown of the typical folders and files you might find in a project using this template. Customize this section to accurately reflect your project's organization.
 
-1. **FUSION 360 POST PROCESSOR**
-    - *JenkinsCNCReprap.cps*
-    A post processor is the link between the CAM system and your CNC machine. The Post Processor translated the CAM instruction including information like the toolpath data, the type of operation, and the desired spindle feeds/speeds into the language that a CNC machine understands (gcode). Despite the fact that the DUET 3 runs RepRap Firmware, the standard RepRap post processor do not work for CNC machining. Our Custom post processor is based on the default RepRap post processor but fixes the gcode syntax errors and adds many additional modular features. 
-    **Directions:**
-      - Uploading file to Fusion 360 Cloud Storage [Personal-cloud]
-        With-in Fusion 360 open the project navigation panel. Under Libraries select "Assets", then select folder "CAMPosts" (if no folder exist then create one.) Upload the custom Post Processor within this folder for cloud storage. 
-      - Create NC Program
-        After creating your CAD model select the "Manufacturing Tab" in Fusion 360. Complete the "Setup" process and the desired toolpaths. Create a new "NC Program".  Under "Post Configuration / Library" specify the location of the Post Processor File [personal-cloud recommended]. Under Post specify the desired file "Jenkins CNC RepRap". Adjust Post Properties if desired, then export gcode.  
-
+1.  **YOUR_PROJECT_SPECIFIC_FOLDER_1** (e.g., `01_DESIGN`, `FUSION 360 POST PROCESSOR`)
+    * *your_file_name.ext* (e.g., `JenkinsCNCReprap.cps`)
+        Describe the purpose of this folder and any key files within it. For example, if it's a design folder, you might mention CAD files or schematics.
+        **Directions (if applicable):**
+        -   Provide instructions relevant to this folder's contents, e.g., how to use a specific file or where to upload it.
 
     
-    &nbsp;
-2. **GCODE**  
-   - *SDCARD*
-    This folder contains a copy of all they files located on our Duet 3 Motherboard SD Card. The system drive contains multiple subfolders each containing different gcode / system files. Before Copying/referencing our  custom files it is best to upgrade the stock firmware and system files. The official Duet 3 releases can be found on GitHub.  [RepRap Files](https://github.com/Duet3D "Duet3D").
-      
-   - *Macros*
-    The Macro folder contains all the additional system files needed for the Duet 3. Files are grouped by their function. 
-     **Directions:**
-        - Upload any of the desired files. Then review the files and make any necessary  adjustment to the position points and the probe/sensors numbers.  
+     
+2.  **YOUR_PROJECT_SPECIFIC_FOLDER_2** (e.g., `02_CAD`, `GCODE`)
+    * *Subfolder_or_File_1* (e.g., `SDCARD`, `Macros`, `Sys`)
+        Explain what this subfolder or file contains.
+        **Directions (if applicable):**
+        -   Provide relevant instructions for using the contents.
 
-   - *Sys*
-    The System folder contains all the important system files needed for the Duet 3. Each file serves as important gcode files that configures the machine and provide necessary gcode for specific processes like tool changes. 
-        **Directions:**
-        - For AutoTool Change Upload the following files:  TFree, Tpost, Tpre, ToolZProbe        
-        - For manual tool Change Upload the following files:  manualtoolchange, ToolZProbe,
+    * *Subfolder_or_File_2*
+        Explanation.
+        **Directions (if applicable):**
+        -   Instructions.
 
+     
+3.  **YOUR_PROJECT_SPECIFIC_FOLDER_3** (e.g., `03_ELECTRICAL`, `GH Pages`)
+    * Description of contents.
 
-
-    &nbsp;
-3. **GH Pages**
-    - Files used for Github Pages and readme text file. 
-
-
-  
-
-    &nbsp;
-4. **MANUALS**
-   - *Post Processor Training Guide*
-     - The reference file for fusion 360 post proccessor. Contains reference material for different hadware apart of the CNC. 
+     
+4.  **YOUR_PROJECT_SPECIFIC_FOLDER_4** (e.g., `04_SOFTWARE`, `MANUALS`)
+    * *File_or_Subfolder_Description* (e.g., `Post Processor Training Guide`)
+        Explanation of contents.
     
   
       
 
 
-> Note: Updating the RepRap firmware should be done carefully. Uploading the updated ZIP file could erase custom gcode files. 
+> Note: Use this section for important warnings, disclaimers, or specific guidance related to your project.
 
 
-&nbsp;
+ 
 ## Installation Instructions
 
-Installation instructions can be found in the youtube video linked below 
- 
+Provide clear and concise instructions on how to set up and run your project. If a video guide is available, link it here.
 
- ### Video link  be updated soon
+ ### Video link (Optional): [Link to your installation video on YouTube]
 
-[![image alt text](http://img.youtube.com/vi/w-qWbZ5-IQw/0.jpg)](https://youtube.com/playlist?list=PLNTKXZ4hgP_jekZOWw05JcJtyseCdSsIV "YouTube")
-
-
-<!-- This is commented out.  
-
-The following is a breakdown of the different folders and the files contained in them:
+[![Optional Installation Video Thumbnail](http://img.youtube.com/vi/w-qWbZ5-IQw/0.jpg)](https://youtube.com/playlist?list=PLNTKXZ4hgP_jekZOWw05JcJtyseCdSsIV "Installation Guide Video Title")
 
 
-```
-cd utils
-node build.js
-```
-
-
-Create a file with a `.zip` extension containing these files and directories:
-
-```
-manifest.json
-common/
-chrome/
-```
-
-
-Create a file with a `.xpi` extension containing these files and directories:
-
-```
-chrome.manifest
-install.rdf
-common/
-firefox/
-```
-
- This is commented out. -->
-
-
-&nbsp;
+ 
 ## Next Steps
 
-This project is now completed. No next steps are planned. We can release bug fixes if found. 
+Outline any future plans, ongoing development, or known issues for your project. If the project is complete, state that here.
 
-If you require assistant join our discord channel linked down below.
+Example: This project is currently in active development, with the following next steps planned:
+-   Implement [Feature X]
+-   Optimize [Performance Y]
+-   Add [Documentation Z]
 
+If you require assistance or want to contribute, consider joining our community channel.
 
-
-&nbsp;
+ 
 ## Components 
 
-The following is a breakdown of key components for this project:
-&nbsp;
+List the key components, software, hardware, or tools required for or used in this project.
+
 | Item          | Function      | Cost  |
 | ------------- |:-------------:| -----:|
-| Fusion 360    | CAD           | Free |
-| VS Code       | Text Editor   |   Free |
+| Your Software | Purpose       | License/Cost |
+| Your Hardware | Functionality | Approx. Cost |
+| Another Tool  | Utility       | Free/Paid |
 
 
-&nbsp;
+ 
 ## Notes and Miscellaneous
 
 
 Disclaimer :
-Modifying your Shapeoko  will void the warranty. Do at your own risk.
+[Add any specific disclaimers or important notes relevant to your project here. E.g., "Use at your own risk," "Project is in beta," etc.]
 
 **ENJOY!!**
 
-That’s  all Folks. Hope this can help you in some way.
+[Add a closing remark, e.g., "Thanks for checking out this project!"]
 ... Consider Supporting Us Down Below. 
 
-&nbsp;
+ 
 ## Links
-
 
 SUPPORT US ► 
 
-Consider Subscribing: https://bit.ly/2DgZyuq <br>
+Consider Subscribing:  https://www.youtube.com/@Jenkins_Robotics <br>
 Patreon ➔ https://www.patreon.com/JenkinsRobotics  <br>
 Venmo ➔ https://venmo.com/u/JenkinsRobotics <br>
-
 
 FOLLOW US ►
 
