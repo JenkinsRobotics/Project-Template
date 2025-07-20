@@ -192,7 +192,7 @@ That’s  all Folks. Hope this can help you in some way.
 
 SUPPORT US ► 
 
-Consider Subscribing: https://bit.ly/2DgZyuq <br>
+Consider Subscribing: https://www.youtube.com/@Jenkins_Robotics<br>
 Patreon ➔ https://www.patreon.com/JenkinsRobotics  <br>
 Venmo ➔ https://venmo.com/u/JenkinsRobotics <br>
 
