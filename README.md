@@ -1,4 +1,3 @@
-```markdown
 ## Repository Template Readme
 # Project Template
 
@@ -30,7 +29,7 @@ For example, you might describe the problem your project solves, its primary fea
  If your project has a related YouTube playlist or video, update the link and description below. Otherwise, you can remove this section.
 
  
-
+  
 [![Optional YouTube Playlist/Video Thumbnail](http://img.youtube.com/vi/w-qWbZ5-IQw/0.jpg)](https://youtube.com/playlist?list=PLNTKXZ4hgP_jekZOWw05JcJtyseCdSsIV "YouTube Project Playlist/Video Title")
 
  
